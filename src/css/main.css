@@ -10,7 +10,7 @@
 }
 
 ::selection{
-	background-color: #3fb1a3;
+	background-color: var(--marlops);
 	color: #fff;
 }
 
@@ -3688,7 +3688,7 @@ body.main-container{
 		height: 100vh;
 		/* cursor: pointer; */
 
-		transition: all 0.5s ease;
+		/* transition: all 0.5s ease; */
 	}
 
 	/* body.main-container div:hover{
@@ -4619,20 +4619,106 @@ ul.default {
 #viajesmarlops{
 	position: fixed;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	z-index: 10000;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	border-radius: 12.5px 25px;
+	font-size: 85%;
+
+
+	/* transition: all 0.5s ease; */
+}	
+
+	#viajesmarlops .viajes-content{
+		color: var(--marlops);
+		display: none;
+		height: auto;
+		text-align: center;
+		padding: 70px 25px 0px 25px;
+	}
+
+		#viajesmarlops .viajes-content h2{
+			font-family: "Anton SC", sans-serif;
+			letter-spacing: 0px;
+			/* border-bottom: 5px solid var(--marlops); */
+			line-height: 0em;
+			text-transform: none;
+			font-style: italic;
+			font-size: 200%;
+		}
+
+		#viajesmarlops .viajes-content p{
+			font-size: 100%;
+			letter-spacing: 0;
+			font-weight: 500;
+			font-family: "Poppins", sans-serif;
+			text-transform: uppercase;
+			margin: 0px 0;
+		}
+
+		#viajesmarlops .viajes-content i{
+			text-transform: none;
+			font-weight: 400;
+			font-family: "Poppins", sans-serif;
+			margin-top: 15px;
+			line-height: 1.25;
+			margin-bottom: 20px;
+		}
+
+	#viajesmarlops .img-viajes {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+		#viajesmarlops .img-viajes img{
+			border: 2px solid #fff;
+			padding: 10px;
+			width: 100%;
+			background-color: #fff;
+			border-radius: 50%;
+			cursor: pointer;
+			/* transition: all 0.5s ease; */
+		}
+
+#viajesmarlops.open{
+	filter: drop-shadow(0 0 10px #00000080);
+	height: 450px;
+	width: 325px;
 }
 
-	#viajesmarlops img{
-		border: 2px solid #fff;
-		padding: 10px;
-		width: 75%;
+	#viajesmarlops.open .viajes-content{
+		flex: 1 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content:center;
 		background-color: #fff;
-		border-radius: 50%;
-		filter: drop-shadow(0 0 0px #000);
+		width: 100%;
+		border-radius: 0 0 12.5px 12.5px;
 	}
+
+	#viajesmarlops.open .img-viajes{
+		flex: 1 30%;
+		display: flex;
+		align-items:end;
+		justify-content: center;
+		background-color: #fff;
+		width: 100%;
+		border-radius: 12.5px 12.5px 0 0;
+		background-image: url('../../public/images/viajes/viajes2.png');
+		background-size: cover;
+		background-position: top;
+	}
+
+		#viajesmarlops.open .img-viajes img{
+			transform: translateY(40px);
+			filter: drop-shadow(0 0 10px #0000004f);
+			width: 25%;
+		}
