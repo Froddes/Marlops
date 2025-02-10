@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Marlop's & La Trasquilá</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description"
+		content="¿Tienes preguntas o quieres reservar nuestros puestos para tu evento? Contáctanos a través de nuestro formulario y te responderemos lo antes posible. ¡Estamos aquí para ayudarte a crear momentos inolvidables!" />
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+				 style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; 
+				 font-src 'self' https://fonts.gstatic.com; 
+				 script-src 'self' 'nonce-cciTIfEPfvG5qnNgVtFKeQ'; 
+				 base-uri 'self'; 
+				 img-src 'self' data:;
+				 connect-src 'self' https://api.emailjs.com; 
+				 require-trusted-types-for 'script';">
+	<link rel="stylesheet" href="src/css/main.css" />
+	<link rel="shortcut icon" href="public/images/logos/marlops.jpg" type="image/x-icon">
+	<noscript>
+		<link rel="stylesheet" href="src/css/noscript.css" />
+	</noscript>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ">
+        window.trustedTypes.createPolicy('default', {
+            createHTML: (input) => input,
+        });
+    </script>
+</head>
+
+<body class="contact is-preload trasquila">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="trasquila">
+			<h1 id="logo" style="letter-spacing: 0.1em;"><a href="index.html"><em>M</em>arlop's & La Tras<strong
+						class="trasquila">Q</strong>uilá</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="index.html">Dulce o Salado</a></li>
+					<li class="current"><a href="quienes-somos.html">Quienes Somos</a></li>
+					<li><a href="contact.html" class="button primary">Contáctanos</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<article id="main">
+			<div id="whatsapp"></div>
+			<div id="errors"></div>
+			<header class="special container">
+				<span class="icon solid fa-envelope" style="color: var(--trasquila);"></span>
+				<h2 style="color: rgb(180, 180, 180);">¡Contacta con nosotros!</h2>
+				<p style="color: rgb(180, 180, 180);">¿Tienes alguna pregunta o necesitas más información? No dudes en
+					contactarnos. Estamos aquí para ayudarte. <br>Recuerda que también puedes ponerte en contacto con
+					nosotros haciendo click en nuestro botón de WhatsApp</p>
+			</header>
+
+			<!-- One -->
+			<section class="wrapper style4 special container medium" style="background-color:rgb(59, 59, 59);">
+
+				<!-- Content -->
+				<div class="content">
+					<form id="form-contact">
+						<div class="row gtr-50">
+							<div class="col-6 col-12-mobile">
+								<input type="text" placeholder="Nombre" required name="from_name" id="from_name" />
+							</div>
+							<div class="col-6 col-12-mobile">
+								<input type="email" placeholder="Correo" name="email_id" id="email_id" required />
+							</div>
+							<div class="col-12">
+								<p class="date">Introduzca la fecha deseada</p>
+								<input type="date" name="date" id="date" required>
+							</div>
+							<div class="col-12">
+								<input type="text" name="asunto" id="asunto" placeholder="Asunto" required />
+							</div>
+							<div class="col-12">
+								<textarea name="mensaje" id="mensaje" placeholder="Mensaje" rows="7"
+									required></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="buttons">
+									<li><input type="submit" class="button send special trasquila"
+											value="Enviar mensaje" id="submit" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</section>
+
+		</article>
+
+		<!-- Footer -->
+		<footer id="footer" class="trasquila"></footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" type="text/javascript">
+		emailjs.init('eBLPow-c3W9DQMS8J')
+	</script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" type="module" src="/src/js/main/contact.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/include.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ">
+		include("src/html/whatsapp.html", "#whatsapp");
+		include("src/html/footer.html", "#footer");
+	</script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/jquery.min.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/jquery.dropotron.min.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/jquery.scrolly.min.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/jquery.scrollex.min.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/browser.min.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/breakpoints.min.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/util.js"></script>
+	<script nonce="cciTIfEPfvG5qnNgVtFKeQ" src="/js/main.js"></script>
+
+</body>
+
+</html>

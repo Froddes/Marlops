@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Waffle con galletas Oreo, chocolate y dulces",
+        "description":"Este waffle es una explosión de sabores, adornado con trozos de galleta Oreo, chocolate cremoso y coloridos dulces. Un deleite visual y gustativo que encanta a todos.",
+        "src":"/images/marlops/product2.jpg",
+        "alt":"marlop's producto 1"
+    },
+    {
+        "id":2,
+        "name":"Waffle con chispas de colores y frutos secos",
+        "description":"Delicado waffle decorado con chispas de colores y frutos secos, creando una combinación ideal de sabor y crunch. Perfecto para quienes buscan una experiencia dulce con un toque de energía.",
+        "src":"/images/marlops/product3.jpg",
+        "alt":"marlop's producto 2"
+    },
+    {
+        "id":3,
+        "name":"Waffle servido en cono con chocolate",
+        "description":"Una delicia portátil: waffle servido en un cono y cubierto con una barra de chocolate. Cada bocado es una combinación deliciosa de calidez y dulzura.",
+        "src":"/images/marlops/product4.jpg",
+        "alt":"marlop's producto 3"
+    },
+    {
+        "id":4,
+        "name":"Waffle con caramelo y trozos de chocolate",
+        "description":"Esponjosos y con un toque de cacao, nuestros cupcakes de Red Velvet están cubiertos con un suave frosting de queso crema, decorados con chispas de chocolate blanco para un final perfecto. (Descripcion de ejemplo)",
+        "src":"/images/marlops/product5.jpg",
+        "alt":"marlop's producto 4"
+    }
+]

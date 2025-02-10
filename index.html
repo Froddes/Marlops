@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descubre Marlops & La Trasquila, los puestos de comida dulce y salada perfectos para bodas, comuniones y eventos especiales. Elige entre una experiencia dulce o salada y sorprende a tus invitados con sabores únicos, presentaciones elegantes y opciones personalizadas." />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+        style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; 
+        font-src 'self' https://fonts.gstatic.com; 
+        script-src 'self' 'nonce-3hXDQLKhy5M6ToDfgvsfwQ' 'unsafe-inline'; 
+        base-uri 'self'; 
+        img-src 'self' data:;
+        require-trusted-types-for 'script';">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9PPPZFY8V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-F9PPPZFY8V');
+    </script>
+    <link rel="shortcut icon" href="./public/images/logos/marlops.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/main.css" />
+    <title>Marlop's & La Trasquilá</title>
+    <script nonce="3hXDQLKhy5M6ToDfgvsfwQ">
+        window.trustedTypes.createPolicy('default', {
+            createHTML: (input) => input, // Devuelve la cadena como HTML confiable
+        });
+    </script>
+</head>
+
+<body class="main-container">
+    <div id="info"></div>
+    <div class="marlops-container">
+        <div class="content">
+            <img src="./public/images/logos/marlops.jpg" alt="" class="logo">
+            <h1><em class="marlops">M</em>arlop's</h1>
+            <p>Dulcería en directo para ventos.</p>
+            <p>Mordiscos a la vida.</p>
+            <a href="marlops.html">
+                <button class="marlops-bt">
+                    Elige dulce
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="trasquila-container">
+        <div class="content">
+            <img src="./public/images/logos/trasquila.jpg" alt="" class="logo">
+            <h1>La Tras<em class="trasquila">Q</em>uilá</h1>
+            <p>Pa' gente salá.</p>
+            <p>Pa' guateques , eventos y otros saraos!</p>
+            <a href="la-trasquila.html">
+                <button class="trasquila-bt">
+                    Elige salado
+                </button>
+            </a>
+        </div>
+    </div>
+    <script nonce="3hXDQLKhy5M6ToDfgvsfwQ" src="/js/include.js"></script>
+    <script nonce="3hXDQLKhy5M6ToDfgvsfwQ">
+        include("src/html/info.html", "#info");
+    </script>
+</body>
+
+</html>

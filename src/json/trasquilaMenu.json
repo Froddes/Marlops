@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name":"Un Festín de Sabores",
+        "description":"Déjate sorprender con una experiencia gastronómica inolvidable gracias a nuestro exclusivo servicio. Desde crujientes tacos y jugosas hamburguesas hasta irresistibles nachos y perritos calientes, cada creación se elabora al momento para satisfacer todos los gustos y convertir tu celebración en un recuerdo único.",
+        "src":"/images/trasquila/logo2.jpeg",
+        "alt":"trasquila logo 1"
+    },
+    {
+        "id":2,
+        "name":"Sabores que Enamoran",
+        "description":"Nuestro menú está diseñado para conquistar todos los paladares. Utilizando ingredientes frescos y preparaciones en directo, ofrecemos una explosión de sabores con opciones como burguers gourmet, kebabs irresistibles y tacos deliciosos. ¡Convierte tu evento en una experiencia culinaria que tus invitados nunca olvidarán!",
+        "src":"/images/trasquila/logo3.jpeg",
+        "alt":"trasquila logo 2"
+    },
+    {
+        "id":3,
+        "name":"Un Viaje Gastronómico",
+        "description":"Con cada plato, te invitamos a un recorrido de sabores únicos y auténticos. Desde nuestras especialidades como hamburguesas y nachos hasta los dulces más irresistibles como gofres y crepes, cada elección está diseñada para llenar tu evento de momentos deliciosos e inolvidables.",
+        "src":"/images/trasquila/logo4.jpeg",
+        "alt":"trasquila logo 3"
+    }
+]

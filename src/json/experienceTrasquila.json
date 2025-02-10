@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "title":"Puestos que Deslumbran",
+        "description":"Nuestros puestos están diseñados para destacar en cualquier evento, ofreciendo una experiencia visual y gastronómica que atraerá a todos tus invitados.",
+        "img":"/images/trasquila/trasquila6.jpeg",
+        "alt":"trasquila imagen 1"
+    },
+    {
+        "id":2,
+        "title":"Estilo y Sabor en Cada Puesto",
+        "description":"Cada puesto combina elegancia y funcionalidad, presentando deliciosos platillos de forma atractiva y accesible, perfectos para cualquier ocasión.",
+        "img":"/images/trasquila/trasquila5.jpeg",
+        "alt":"trasquila imagen 2"
+    },
+    {
+        "id":3,
+        "title":"Ambientes que Enamoran",
+        "description":"Con una decoración cuidada y temática, nuestros puestos se integran perfectamente en la estética de tu evento, añadiendo un toque de estilo único.",
+        "img":"/images/trasquila/trasquila1.jpg",
+        "alt":"trasquila imagen 3"
+    },
+    {
+        "id":4,
+        "title":"Puestos con Encanto",
+        "description":"Creamos una ambientación acogedora y atractiva en cada uno de nuestros puestos, haciendo que tanto la vista como el paladar disfruten de la experiencia.",
+        "img":"/images/trasquila/trasquila7.jpeg",
+        "alt":"trasquila imagen 4"
+    },
+    {
+        "id":5,
+        "title":"Atención Cercana y Cálida",
+        "description":"Nuestro equipo se dedica a brindar un trato amable y personalizado, asegurándose de que cada invitado se sienta atendido y valorado.",
+        "img":"/images/trasquila/trasquila3.jpg",
+        "alt":"trasquila imagen 5"
+    },
+    {
+        "id":6,
+        "title":"Satisfacción Garantizada",
+        "description":"Nos comprometemos a ofrecer un servicio impecable que garantice la satisfacción de tus invitados, superando sus expectativas en cada detalle.",
+        "img":"/images/trasquila/trasquila4.jpeg",
+        "alt":"trasquila imagen 6"
+    }
+]
