@@ -7,6 +7,7 @@
 :root{
 	--marlops: #f56a6a;
 	--trasquila: #a1862b;
+	--viajes: rgb(19, 19, 73);
 }
 
 ::selection{
@@ -4654,33 +4655,44 @@ ul.default {
 		transition: all 0.2s ease;
 		padding: 12.5px 20px;
 		display: none;
+		filter: drop-shadow(0 0 10px #0000007e);
+
 	}
 
 	#viajesmarlops span.fa-times:hover{
-		filter: drop-shadow(0 0 10px #0000007e);
+		filter: drop-shadow(0 0 10px #000000c9);
 	}
 
 	#viajesmarlops .viajes-content{
-		color: var(--marlops);
+		color: var(--viajes);
 		display: none;
 		height: auto;
 		text-align: center;
-		padding: 70px 25px 0px 25px;
+		padding: 35px 25px 0px 25px;
 	}
 
 		#viajesmarlops .viajes-content h2{
 			font-family: "Anton SC", sans-serif;
 			letter-spacing: 0px;
 			/* border-bottom: 5px solid var(--marlops); */
-			line-height: 0em;
+			line-height: 1em;
 			text-transform: none;
 			font-style: italic;
-			font-size: 200%;
+			font-size: 300%;
+			margin-bottom: 5px;
+			position: relative;
 		}
 
+			#viajesmarlops .viajes-content h2 i{
+				font-size: 62.5%;
+				font-family: "Anton SC", sans-serif;
+				position: absolute;
+				left: 25px;
+			}
+
 		#viajesmarlops .viajes-content p{
-			font-size: 100%;
-			letter-spacing: 0;
+			font-size: 105%;
+			letter-spacing: 0.15em;
 			font-weight: 500;
 			font-family: "Poppins", sans-serif;
 			text-transform: uppercase;
@@ -4768,10 +4780,9 @@ ul.default {
 		display: flex;
 		align-items:end;
 		justify-content: center;
-		background-color: #fff;
 		width: 100%;
 		border-radius: 12.5px 12.5px 0 0;
-		background-image: url('../../public/images/viajes/viajes2.png');
+		background-image: url('../../public/images/viajes/banner.webp');
 		background-size: cover;
 		background-position: top;
 	}
@@ -4803,6 +4814,12 @@ ul.default {
     	left: 50%;
 		bottom: auto;
     	transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-width: 737px){
+	#viajesmarlops .viajes-content h2{
+		padding: 0;
 	}
 }
 
