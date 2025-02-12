@@ -25,7 +25,7 @@ pageFiles.forEach(({ name, file }) => {
 });
 
 // Agrega los archivos HTML ubicados en src/html/
-const additionalHtmlFiles = ['whatsapp', 'footer', 'info'];
+const additionalHtmlFiles = ['whatsapp', 'footer', 'info', 'viajesmarlops'];
 additionalHtmlFiles.forEach((file) => {
   inputEntries[file] = path.resolve(__dirname, 'src/html/', `${file}.html`);
 });
