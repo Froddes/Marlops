@@ -4652,10 +4652,10 @@ ul.default {
 		top: 0;
 		left: 0;
 		cursor: pointer;
-		transition: all 0.2s ease;
+		transition: all 0.3s ease;
 		padding: 12.5px 20px;
 		display: none;
-		filter: drop-shadow(0 0 10px #0000007e);
+		filter: drop-shadow(0 0 5px #0000007e);
 
 	}
 
