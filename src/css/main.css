@@ -3701,7 +3701,8 @@ body.main-container{
 		background-repeat: no-repeat;
 		background-position: bottom;
 
-		border-right: 3px solid #fff ;
+		border-right: 3px solid #fff;
+		transition: filter 0.3s ease;
 	}
 	/* .marlops-container:hover .trasquila-container{
 		flex: 1 50%;
@@ -3711,6 +3712,9 @@ body.main-container{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
+
+		transition: filter 0.3s ease;
+
 	}
 
 	/* .trasquila-container:hover .marlops-container{
@@ -4436,6 +4440,13 @@ body.main-container{
 
 /* ws */
 
+#whatsapp{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 1000;
+}
+
 .btn-ws{
 	position: fixed;
 	width: 50px;
@@ -4463,7 +4474,7 @@ body.main-container{
 #info{
 	position: fixed;
 	bottom: 30px;
-	right: 30px;
+	left: 30px;
 	z-index: 1000;
 }
 .info-button{
@@ -4473,7 +4484,7 @@ body.main-container{
 	line-height: 50px;
 	text-align: center;
 	bottom: 30px;
-	right: 30px;
+	left: 30px;
 	z-index: 100000;
 	color: #fff;
 	border-radius: 50%;
@@ -4630,10 +4641,24 @@ ul.default {
 	width: 100px;
 	border-radius: 12.5px 25px;
 	font-size: 85%;
+}
 
+	#viajesmarlops span.fa-times{
+		color: var(--marlops);
+		font-size: 200%;
+		position: absolute;
+		z-index: 1000000;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		transition: all 0.2s ease;
+		padding: 12.5px 20px;
+		display: none;
+	}
 
-	/* transition: all 0.5s ease; */
-}	
+	#viajesmarlops span.fa-times:hover{
+		filter: drop-shadow(0 0 10px #0000007e);
+	}
 
 	#viajesmarlops .viajes-content{
 		color: var(--marlops);
@@ -4684,14 +4709,48 @@ ul.default {
 			background-color: #fff;
 			border-radius: 50%;
 			cursor: pointer;
-			/* transition: all 0.5s ease; */
+
+			animation: onLoadViajes 1.5s ease;
+			transition: transform 0.3s ease;
+		}
+
+		@keyframes onLoadViajes {
+			0%{
+				opacity: 0;
+				transform: translateY(50px);
+			}100%{
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		#viajesmarlops .img-viajes img:hover{
+			transform: translateY(-5px);
 		}
 
 #viajesmarlops.open{
 	filter: drop-shadow(0 0 10px #00000080);
 	height: 450px;
 	width: 325px;
+
+	animation: openViajes 0.5s ease;
 }
+
+@keyframes openViajes {
+	0%{
+		opacity: 0;
+		height: 425px;
+		width: 300px;
+	}100%{
+		opacity: 1;
+		height: 450px;
+		width: 325px;
+	}
+}
+
+	#viajesmarlops.open span.fa-times{
+		display: block;
+	}
 
 	#viajesmarlops.open .viajes-content{
 		flex: 1 70%;
@@ -4721,4 +4780,51 @@ ul.default {
 			transform: translateY(40px);
 			filter: drop-shadow(0 0 10px #0000004f);
 			width: 25%;
+
+			transition: transform 0.3s ease;
 		}
+
+		#viajesmarlops.open .img-viajes img:hover{
+			transform: translateY(35px);
+		}
+
+@media screen and (max-width: 950px){
+	#viajesmarlops{
+		bottom: 20px;
+		left: 50%;
+		top: auto;
+		transform: translateX(-50%);
+		height: 80px;
+		width: 80px;
+	}
+
+	#viajesmarlops.open{
+		top: 50%;
+    	left: 50%;
+		bottom: auto;
+    	transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-width: 450px){
+	#viajesmarlops{
+		font-size: 92.5%;
+	}
+
+	#viajesmarlops.open{
+		height: 400px;
+		width: 275px;
+	}
+
+	@keyframes openViajes {
+		0%{
+			opacity: 0;
+			height: 375px;
+			width: 250px;
+		}100%{
+			opacity: 1;
+			height: 400px;
+			width: 275px;
+		}
+	}
+}
