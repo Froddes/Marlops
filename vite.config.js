@@ -15,7 +15,8 @@ const pageFiles = [
   // Agrega los archivos adicionales aquí
   { name: 'whatsapp', file: 'whatsapp.html' },
   { name: 'footer', file: 'footer.html' },
-  { name: 'info', file: 'info.html' }
+  { name: 'info', file: 'info.html' },
+  { name: 'viajesmarlops', file: 'viajesmarlops.html'}
 ];
 
 const inputEntries = {};
