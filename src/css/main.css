@@ -2896,7 +2896,7 @@ input, select, textarea {
 	}
 
 	#cta.marlops{
-		background-image: url("../../public/images/marlops/marlops2.jpg");
+		background-image: url("../../public/images/marlops/marlops2-blur.jpg");
 		background-size: cover;
 		background-position: center;
 	}
@@ -3916,39 +3916,39 @@ body.main-container{
 /* Gallery */
 
 .gallery-container{
-	background-color: var(--marlops);
+	background-color: transparent;
+	background-image: url('../../public/images/otros/tablon.jpg');
+	background-size: contain !important;
+	background-repeat: repeat-y;
 	color: #fff;
 	padding: 50px 0 5px 0;
-
-
-    background-position: top left, top right, bottom left, bottom right;
-    background-repeat: no-repeat;
-    background-size: 25em;
+	border-radius: 5px;
+	border: 10px solid rgb(131, 93, 12);
+	box-shadow: 0 0 20px #00000041;
 }
 
 	.gallery-container h3{
-		font-size: 2em;
-		text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		font-size: 2.5em;
+		color: #ffffff;
+		letter-spacing: 0.25em;
+		text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+		padding: 40px 0 20px 0;
 	}
 
 	.gallery-container div.postit{
-		background-position: top left, top right, bottom left, bottom right;
-		background-repeat: no-repeat;
-		background-size: 10em;
-
 		position: relative;
-		background-color:#ad482f;
+		background-color:var(--marlops);
 		margin: 0 50px;
-		border-radius: 0px 0px 40% 40%;
-		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
 
 		padding: 0 30px;
 		margin-bottom: 75px;
 		transition: all 0.3s ease;
+		transform:rotateZ(3deg);
 	}
 
 	.gallery-container div.postit:hover{
-		transform:rotateZ(1deg)translateY(10px);
+		transform:rotateZ(0)translateY(10px);
 	}
 
 	.gallery-container p{
@@ -4038,8 +4038,8 @@ body.main-container{
 		background-repeat: no-repeat;
 		opacity: 0.75;
 		z-index: 10;
-		width: 85px;
-		height: 85px;
+		width: 75px;
+		height: 75px;
 		position: absolute;
 		top: 5px;
 		left: 50%;
@@ -4131,10 +4131,10 @@ body.main-container{
 		margin-top: 75px;
 	}
 
-	.gallery-container div.postit{
+	/* .gallery-container div.postit{
 		border-radius: 0 0 50% 50%;
 		padding: 0;
-	}
+	} */
 	.gallery-container p{
 		padding: 50px 30px 60px 30px;
 	}
@@ -4147,10 +4147,10 @@ body.main-container{
 	.gallery-row{
 		padding: 0 25px;
 	}
-	.gallery-container div.postit{
+	/* .gallery-container div.postit{
 		border-radius: 0 0 45% 45%;
 		margin: 0 20px 50px 20px;
-	}
+	} */
 	.gallery-container p{
 		padding: 50px 30px 60px 30px;
 	}
@@ -4166,10 +4166,10 @@ body.main-container{
 	.gallery-video video:hover{
 		transform: none;
 	}
-	.gallery-container div.postit{
+	/* .gallery-container div.postit{
 		border-radius: 0 0 45% 45%;
 		margin: 30px 20px;
-	}
+	} */
 	.gallery-container p{
 		padding: 50px 30px 60px 30px;
 		text-align: center;
@@ -4229,10 +4229,10 @@ body.main-container{
 	.gallery-video video{
 		margin: 5px 0;
 	}
-	.gallery-container div.postit{
+	/* .gallery-container div.postit{
 		border-radius: 0 0 40% 40%;
 		margin: 30px 20px 50px 20px;
-	}
+	} */
 	.gallery-container p{
 		font-size: 0.85em;
 		padding: 40px 20px;
@@ -4244,10 +4244,10 @@ body.main-container{
 	.gallery-container h3{
 		font-size: 1.5em;
 	}
-	.gallery-container div.postit{
+	/* .gallery-container div.postit{
 		border-radius: 0 0 20% 20%;
 		margin: 30px 20px 50px 20px;
-	}
+	} */
 	.gallery-container p{
 		font-size: 0.85em;
 		padding: 40px 12.5px;
@@ -4820,6 +4820,7 @@ ul.default {
 @media screen and (max-width: 737px){
 	#viajesmarlops .viajes-content h2{
 		padding: 0;
+		line-height: 1.1em;
 	}
 }
 

@@ -10,17 +10,20 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
         style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; 
         font-src 'self' https://fonts.gstatic.com; 
-        script-src 'self' 'nonce-3hXDQLKhy5M6ToDfgvsfwQ' 'unsafe-inline'; 
+        script-src 'self' 'nonce-3hXDQLKhy5M6ToDfgvsfwQ' https://www.googletagmanager.com; 
+        connect-src 'self' https://region1.google-analytics.com https://www.googletagmanager.com;
         base-uri 'self'; 
         img-src 'self' data:;
         require-trusted-types-for 'script';">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9PPPZFY8V"></script>
-    <script>
+    <script nonce="3hXDQLKhy5M6ToDfgvsfwQ">
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-F9PPPZFY8V');
+        gtag('config', 'G-F9PPPZFY8V', {
+            cookie_flags: 'SameSite=None;Secure'
+        });
     </script>
     <link rel="shortcut icon" href="./public/images/logos/marlops.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/main.css" />
@@ -35,10 +38,34 @@
 <body class="main-container" style="background-color: #222;">
     <div id="info"></div>
     <div id="whatsapp"></div>
-    <div id="viajesmarlops"></div>
+    <div id="viajesmarlops">
+        <div class="img-viajes">
+            <img id="viajes-img" src="../../public/images/logos/viajes.png" alt="">
+        </div>
+        <div class="viajes-content">
+            <h2><i>Viajes</i><br> Marlop's</h2>
+            <p>ZAFIRO TOURS</p>
+            <i>Tu camino comienza aquí <br> !Vámonos de vacaciones!</i>
+            <ul class="icons">
+                <li>
+                    <a href="https://www.instagram.com/viajesmarlops/" class="icon brands circle fa-instagram t" target="_blank"
+                        aria-label="Visitar Instagram de La Trasquilá" style="background-color: var(--marlops) !important; color:#fff;">
+                        <span class="label">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:info@marlopsylatrasquila.com" class="icon circle fa-envelope" target="_blank"
+                        aria-label="Enviar un correo electrónico a Marlops" style="background-color: var(--marlops) !important; color:#fff;">
+                        <span class="label">Correo electrónico</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <span class="icon solid fa-times"></span>
+    </div>
     <div class="marlops-container">
         <div class="content">
-            <img src="./public/images/logos/marlops.jpg" alt="" class="logo">
+            <img src="./public/images/logos/marlops.jpg" alt="Logo de Marlop's" class="logo">
             <h1><em class="marlops">M</em>arlop's</h1>
             <p>Dulcería en directo para ventos.</p>
             <p>Mordiscos a la vida.</p>
@@ -51,7 +78,7 @@
     </div>
     <div class="trasquila-container">
         <div class="content">
-            <img src="./public/images/logos/trasquila.jpg" alt="" class="logo">
+            <img src="./public/images/logos/trasquila.jpg" alt="Logo de La Trasquilá" class="logo">
             <h1>La Tras<em class="trasquila">Q</em>uilá</h1>
             <p>Pa' gente salá.</p>
             <p>Pa' guateques , eventos y otros saraos!</p>
@@ -61,13 +88,12 @@
                 </button>
             </a>
         </div>
-    </div>
+    </div>   
     <script nonce="3hXDQLKhy5M6ToDfgvsfwQ" src="/src/js/main/main.js" type="module"></script>
     <script nonce="3hXDQLKhy5M6ToDfgvsfwQ" src="/js/include.js"></script>
     <script nonce="3hXDQLKhy5M6ToDfgvsfwQ">
         include("src/html/info.html", "#info");
         include("src/html/whatsapp.html", "#whatsapp");
-        include("src/html/viajesmarlops.html", "#viajesmarlops");
     </script>
 </body>
 

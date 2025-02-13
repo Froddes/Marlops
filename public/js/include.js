@@ -1,16 +1,15 @@
 "use strict";
 
-function include(htmlFile, selector) {
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", htmlFile, false); // Becomes synchronous
-    xhr.addEventListener("load", function() {
-        if (xhr.status === 200) {
-            document.querySelector(selector).innerHTML += xhr.responseText;
+async function include(htmlFile, selector) {
+    try {
+        let response = await fetch(htmlFile);
+        if (response.ok) {
+            let htmlContent = await response.text();
+            document.querySelector(selector).innerHTML += htmlContent;
         } else {
             console.error(htmlFile + " does not exist");
         }
-    });
-    xhr.send();
+    } catch (error) {
+        console.error("Error fetching " + htmlFile + ": ", error);
+    }
 }
-
-window.include = include;

@@ -48,8 +48,8 @@ const galleryRenderer = {
         const html = `
         <span class="gallery-video">
             <div class="cinta"></div>
-            <span class="icon solid fa-play"></span>
-            <video>
+            <span class="icon solid fa-pause"></span>
+            <video autoplay loop muted>
                 <source src="${src}" type="video/mp4">
             </video>
         </span>

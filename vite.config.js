@@ -16,7 +16,6 @@ const pageFiles = [
   { name: 'whatsapp', file: 'whatsapp.html' },
   { name: 'footer', file: 'footer.html' },
   { name: 'info', file: 'info.html' },
-  { name: 'viajesmarlops', file: 'viajesmarlops.html'}
 ];
 
 const inputEntries = {};
@@ -25,7 +24,7 @@ pageFiles.forEach(({ name, file }) => {
 });
 
 // Agrega los archivos HTML ubicados en src/html/
-const additionalHtmlFiles = ['whatsapp', 'footer', 'info', 'viajesmarlops'];
+const additionalHtmlFiles = ['whatsapp', 'footer', 'info'];
 additionalHtmlFiles.forEach((file) => {
   inputEntries[file] = path.resolve(__dirname, 'src/html/', `${file}.html`);
 });
