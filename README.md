@@ -24,7 +24,7 @@ Este proyecto contiene el código fuente de la web oficial, donde los clientes p
 
 ## Creditos:
 
-Este proyecto ha sido desarrollado por [Froddes](https://froddes.netlify.app/).
+Este proyecto ha sido desarrollado por [Froddes](https://froddes.netlify.app/)
 
 - **Icons**:
 	- Font Awesome (fontawesome.io)
