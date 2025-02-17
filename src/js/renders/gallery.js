@@ -12,7 +12,7 @@ const galleryRenderer = {
         const viewImg = parseHTML('<div id="view-img-container"><img id="view-img" src="/images/marlops/marlops7.jpg" alt="marlops imagen 7"></div>');
         galleryContainer.appendChild(viewImg);
 
-        const paraf = parseHTML('<div class="postit"><p class="postit">Ahora, déjate llevar por nuestras creaciones en <strong>M</strong>ovimiento. Estos videos c<strong>A</strong>pturan la esencia de Ma<strong>R</strong>lops en acción, mostrando cómo cada deta<strong>L</strong>le c<strong>O</strong>bra vida <strong>P</strong>ara hacer de tu evento una experiencia única y delicio<strong>S</strong>a.</p><div class="cinta"></div></div>');
+        const paraf = parseHTML(`<div class="postit"><p class="postit">Marlop's en acción: Detalles que cobran vida</p><div class="cinta"></div></div>`);
 
         galleryContainer.appendChild(paraf);
 

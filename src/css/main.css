@@ -3933,6 +3933,7 @@ body.main-container{
 		letter-spacing: 0.25em;
 		text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
 		padding: 40px 0 20px 0;
+		margin: 0 15px;
 	}
 
 	.gallery-container div.postit{
@@ -3952,7 +3953,10 @@ body.main-container{
 	}
 
 	.gallery-container p{
-		padding: 50px 0 70px 0;
+		font-size: 1.5em;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 45px 0;
 		padding-left: 25px;
 	}
 
@@ -4128,7 +4132,7 @@ body.main-container{
 		background-size: 20em;
 	}
 	.gallery-row{
-		margin-top: 75px;
+		margin-top: 40px;
 	}
 
 	/* .gallery-container div.postit{
@@ -4136,7 +4140,10 @@ body.main-container{
 		padding: 0;
 	} */
 	.gallery-container p{
-		padding: 50px 30px 60px 30px;
+		padding: 40px 30px;
+	}
+	.gallery-container h3{
+		padding: 20px 0 30px 0;
 	}
 }
 
@@ -4171,8 +4178,9 @@ body.main-container{
 		margin: 30px 20px;
 	} */
 	.gallery-container p{
-		padding: 50px 30px 60px 30px;
 		text-align: center;
+		padding: 40px 10px 30px;
+		margin: 30px 0 10px 0;
 	}
 }
 
@@ -4220,6 +4228,11 @@ body.main-container{
 	.gallery-container{
 		background-size: 10em;
 	}
+	.gallery-container div.postit{
+		margin: 0 20px;
+		padding: 0 10px;
+		margin-bottom: 50px;
+	}
 }
 
 @media screen and (max-width: 515px){
@@ -4234,8 +4247,8 @@ body.main-container{
 		margin: 30px 20px 50px 20px;
 	} */
 	.gallery-container p{
-		font-size: 0.85em;
-		padding: 40px 20px;
+		font-size: 1.25em;
+		padding: 35px 10px 25px 10px;
 		text-align: center;
 	}
 }
@@ -4249,8 +4262,8 @@ body.main-container{
 		margin: 30px 20px 50px 20px;
 	} */
 	.gallery-container p{
-		font-size: 0.85em;
-		padding: 40px 12.5px;
+		font-size: 1em;
+		padding: 35px 0px 25px 0px;
 		text-align: center;
 	}
 }
