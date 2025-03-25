@@ -2518,8 +2518,9 @@ input, select, textarea {
 	}
 
 	#header.trasquila{
-		background: rgb(59, 59, 59);
+		background: #222;
 		color: #fff;
+		box-shadow:0 0 10px #00000077;
 	}
 
 		#header h1 {
@@ -2784,7 +2785,7 @@ input, select, textarea {
 			-moz-animation-fill-mode: forwards;
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards; */
-			animation: onLoadMain 1s ease;
+			/* animation: onLoadMain 1s ease; */
 			background: #00000039;
 			color: #fff;
 			display: inline-block;
@@ -2860,7 +2861,7 @@ input, select, textarea {
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
-		padding: 7em 0;
+		padding: 7em 0 3em 0;
 	}
 
 		#main > :last-child {
@@ -2902,9 +2903,9 @@ input, select, textarea {
 	}
 
 	#cta.trasquila{
-		background-image: url("../../public/images/trasquila/trasquila1.jpg");
+		background-image: url("../../public/images/trasquila/cta.jpg");
 		background-size: cover;
-		background-position: top;
+		background-position: bottom;
 	}
 
 		#cta header {
@@ -4858,4 +4859,99 @@ ul.default {
 			width: 275px;
 		}
 	}
+}
+
+
+/* FAQ */
+
+.faq-accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	transition: all 0.3s ease;
+}
+
+.faq-question {
+	position: relative;
+	color: rgb(70, 70, 70);
+	background-color: #ac903698;
+	text-shadow: none !important;
+	border: none;
+	padding: 25px 40px;
+	text-align: left;
+	letter-spacing: 0.5px;
+	line-height: 1.5em;
+	cursor: default; /* Ya no es interactivo */
+	font-size: 1em;
+	font-weight: 600;
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px #00000010;
+	transition: all 0.3s ease;
+}
+
+.faq-question:hover{
+	color: #222;
+	background-color: #ac903698 !important;
+	text-shadow: none !important;
+}
+
+.faq-answer {
+	padding: 1em;
+	background-color: #fff;
+	border-left: 4px solid var(--trasquila, #ccc);
+	border-radius: 0 0.5em 0.5em 0.5em;
+	box-shadow: 0 0 5px #00000010;
+	transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+@media screen and (max-width: 800px){
+	.faq-question{
+		padding: 25px 20px;
+	}
+}
+
+@media screen and (max-width: 750px){
+	button.faq-question{
+		max-width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.faq-accordion{
+		font-size: 0.9em;
+	}
+	.faq-question{
+		padding: 12.5px 20px;
+		text-align: center;
+	}
+	.faq-answer p{
+		padding: 0 5px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.faq-accordion{
+		font-size: 0.825em;
+	}
+	.faq-question{
+		padding: 12.5px 20px;
+		text-align: center;
+	}
+}
+
+/* Form */
+
+#form-response{
+	text-shadow: none;
+	background-color: #0f7a1d;
+	padding: 15px; 
+	margin-bottom: 1.75em;
+	text-align: center;
+	display: none;
+}
+
+#form-response.error{
+	text-shadow: none;
+	background-color: #ca3030;
+	padding: 15px;
 }

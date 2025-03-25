@@ -49,7 +49,7 @@ const galleryRenderer = {
         <span class="gallery-video">
             <div class="cinta"></div>
             <span class="icon solid fa-pause"></span>
-            <video autoplay loop muted>
+            <video autoplay loop muted poster="/public/images/marlops/marlops2.jpg">
                 <source src="${src}" type="video/mp4">
             </video>
         </span>

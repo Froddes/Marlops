@@ -32,21 +32,33 @@ function handleClose(){
     errorDiv.innerHTML = "";
 }
 
-function handleSend(form){
+function handleSend(form) {
     const btn = document.getElementById("submit");
+    const responseEl = document.getElementById("form-response");
+
     btn.value = "Enviando...";
+    responseEl.style.display = "none"; // Oculta mensaje anterior si existía
 
     const serviceID = 'default_service';
     const templateID = 'template_f6hdcju';
 
     emailjs.sendForm(serviceID, templateID, form)
-    .then(() => {
-      btn.value = 'Enviar Mensaje';
-      alert('Mensaje enviado!');
-    }, (err) => {
-      btn.value = 'Enviar Mensaje';
-      alert(JSON.stringify(err));
-    });
+        .then(() => {
+            btn.value = 'Enviar Mensaje';
+            responseEl.textContent = '¡Gracias por tu mensaje! Te responderemos pronto.';
+            responseEl.style.color = '#fff';
+            responseEl.style.display = 'block';
+            responseEl.className = "";
+            form.reset();
+        }, (err) => {
+            btn.value = 'Enviar Mensaje';
+            responseEl.textContent = 'Ha ocurrido un error. Intenta de nuevo más tarde.';
+            responseEl.style.color = '#fff';
+            responseEl.style.display = 'block';
+            responseEl.className = "error"
+            console.error('Error al enviar con EmailJS:', err);
+        });
 }
+
 
 document.addEventListener("DOMContentLoaded", contact);
