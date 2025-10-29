@@ -28,5 +28,25 @@
         "id":6,
         "src":"/images/marlops/marlops7.jpg",
         "alt":"marlop's img6"
+    },
+    {
+        "id":7,
+        "src":"/images/marlops/galeria-marlops (1).jpg",
+        "alt":"marlop's img7"
+    },
+    {
+        "id":8,
+        "src":"/images/marlops/galeria-marlops (2).jpg",
+        "alt":"marlop's img8"
+    },
+    {
+        "id":9,
+        "src":"/images/marlops/galeria-marlops (3).jpg",
+        "alt":"marlop's img9"
+    },
+    {
+        "id":10,
+        "src":"/images/marlops/galeria-marlops (4).jpg",
+        "alt":"marlop's img10"
     }
 ]
