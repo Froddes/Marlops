@@ -1,52 +1,72 @@
 [
     {
-        "id":1,
-        "src":"/images/marlops/marlops2.jpg",
-        "alt":"marlop's img1"
+        "id": 1,
+        "src": "/images/marlops/marlops2.jpg",
+        "alt": "marlop's img1"
+    },
+        {
+        "id": 14,
+        "src": "/images/marlops/galeria-marlops (7).jpg",
+        "alt": "marlop's img14"
     },
     {
-        "id":2,
-        "src":"/images/marlops/marlops3.jpg",
-        "alt":"marlop's img2"
+        "id": 2,
+        "src": "/images/marlops/marlops3.jpg",
+        "alt": "marlop's img2"
     },
     {
-        "id":3,
-        "src":"/images/marlops/marlops4.jpg",
-        "alt":"marlop's img3"
+        "id": 3,
+        "src": "/images/marlops/marlops4.jpg",
+        "alt": "marlop's img3"
     },
     {
-        "id":4,
-        "src":"/images/marlops/marlops5.jpg",
-        "alt":"marlop's img4"
+        "id": 4,
+        "src": "/images/marlops/marlops5.jpg",
+        "alt": "marlop's img4"
     },
     {
-        "id":5,
-        "src":"/images/marlops/marlops6.jpg",
-        "alt":"marlop's img5"
+        "id": 5,
+        "src": "/images/marlops/marlops6.jpg",
+        "alt": "marlop's img5"
     },
     {
-        "id":6,
-        "src":"/images/marlops/marlops7.jpg",
-        "alt":"marlop's img6"
+        "id": 6,
+        "src": "/images/marlops/marlops7.jpg",
+        "alt": "marlop's img6"
     },
     {
-        "id":7,
-        "src":"/images/marlops/galeria-marlops (1).jpg",
-        "alt":"marlop's img7"
+        "id": 7,
+        "src": "/images/marlops/galeria-marlops (1).jpg",
+        "alt": "marlop's img7"
     },
     {
-        "id":8,
-        "src":"/images/marlops/galeria-marlops (2).jpg",
-        "alt":"marlop's img8"
+        "id": 8,
+        "src": "/images/marlops/galeria-marlops (2).jpg",
+        "alt": "marlop's img8"
     },
     {
-        "id":9,
-        "src":"/images/marlops/galeria-marlops (3).jpg",
-        "alt":"marlop's img9"
+        "id": 9,
+        "src": "/images/marlops/galeria-marlops (3).jpg",
+        "alt": "marlop's img9"
     },
     {
-        "id":10,
-        "src":"/images/marlops/galeria-marlops (4).jpg",
-        "alt":"marlop's img10"
+        "id": 10,
+        "src": "/images/marlops/galeria-marlops (4).jpg",
+        "alt": "marlop's img10"
+    },
+    {
+        "id": 11,
+        "src": "/images/marlops/galeria-marlops.webp",
+        "alt": "marlop's img11"
+    },
+    {
+        "id": 12,
+        "src": "/images/marlops/galeria-marlops (5).webp",
+        "alt": "marlop's img12"
+    },
+    {
+        "id": 13,
+        "src": "/images/marlops/galeria-marlops (6).webp",
+        "alt": "marlop's img13"
     }
 ]
