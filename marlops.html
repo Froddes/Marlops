@@ -7,13 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 	<meta name="description"
 		content="Marlop's ofrece gofres, helados y postres personalizados para eventos. Endulza tu celebración con nuestro puesto de dulces interactivo y visual.">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
-               style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; 
-               font-src 'self' https://fonts.gstatic.com; 
-               script-src 'self' 'nonce-ilD-Ih94PPazPYxzHHcR8A';
-			   base-uri 'self';
-			   img-src 'self' data:;
-               require-trusted-types-for 'script';">
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'self';
+		style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com;
+		font-src 'self' https://fonts.gstatic.com;
+		script-src 'self' https://unpkg.com 'nonce-ilD-Ih94PPazPYxzHHcR8A';
+		img-src 'self' data:;
+		base-uri 'self';
+		require-trusted-types-for 'script';
+	">
+
 	<link rel="stylesheet" href="src/css/main.css" />
 	<link rel="shortcut icon" href="public/images/logos/marlops.png" type="image/x-icon" />
 	<noscript>
@@ -24,6 +27,8 @@
 			createHTML: (input) => input, // Devuelve la cadena como HTML confiable
 		});
 	</script>
+	<!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <script type="application/ld+json">
 	{
@@ -120,7 +125,8 @@
 			<!-- Marlops -->
 			<section id="puesto-marlops" class="wrapper style2 marlops container special-alt">
 				<div class="row gtr-50">
-					<div class="col-8 col-12-narrower">
+					<div class="col-8 col-12-narrower" data-aos="fade-left" data-aos-delay="0"
+						data-aos-duration="1000">
 						<header>
 							<h3>Concepto y Filosofía</h3>
 							<p>El Arte de Endulzar Momentos</p>
@@ -134,7 +140,8 @@
 							<p>Dulces Diseñados a Tu Medida</p>
 						</header>
 					</div>
-					<div class="col-4 col-12-narrower imp-narrower">
+					<div class="col-4 col-12-narrower imp-narrower" data-aos="fade-right" data-aos-delay="0"
+						data-aos-duration="1000">
 						<ul class="featured-icons">
 							<li>
 								<span class="icon solid fa-brain"><span class="label">Feature 1</span></span>
@@ -252,6 +259,12 @@
 	<script nonce="ilD-Ih94PPazPYxzHHcR8A" src="/js/breakpoints.min.js"></script>
 	<script nonce="ilD-Ih94PPazPYxzHHcR8A" src="/js/util.js"></script>
 	<script nonce="ilD-Ih94PPazPYxzHHcR8A" src="/js/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script nonce="ilD-Ih94PPazPYxzHHcR8A">
+		AOS.init({
+			once: true
+		});
+	</script>
 </body>
 
 </html>

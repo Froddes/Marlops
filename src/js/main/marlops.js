@@ -10,6 +10,7 @@ function marlops(){
     loadGallery();
     loadMenu();
     handleImages();
+    loadAnimations();
 }
 
 function loadGallery(){
@@ -43,6 +44,13 @@ function handleImages(){
     viewImgContainer.onclick = () => {
         viewImgContainer.classList = "";
         document.body.style.overflow = 'auto';
+    }
+}
+
+function loadAnimations(){
+    const rows = document.querySelectorAll(".menu-row");
+    for (let row of rows){
+        console.log(row)
     }
 }
 
