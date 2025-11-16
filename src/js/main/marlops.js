@@ -4,13 +4,11 @@ import {galleryRenderer} from '../renders/gallery.js';
 import { menuRenderer } from '../renders/menu.js';
 import menu from '../../json/marlopsMenu.json';
 import imgs from '../../json/marlopsGallery.json';
-// import videos from '../../json/marlopsVideos.json';
 
 function marlops(){
     loadGallery();
     loadMenu();
     handleImages();
-    loadAnimations();
 }
 
 function loadGallery(){
@@ -44,13 +42,6 @@ function handleImages(){
     viewImgContainer.onclick = () => {
         viewImgContainer.classList = "";
         document.body.style.overflow = 'auto';
-    }
-}
-
-function loadAnimations(){
-    const rows = document.querySelectorAll(".menu-row");
-    for (let row of rows){
-        console.log(row)
     }
 }
 
