@@ -1,35 +1,48 @@
-# Marlops & La Trasquila - Web Oficial
+# Marlop's & La Trasquilá — web
 
-Bienvenido al repositorio del sitio web de **Marlops** y **La Trasquila**, especialistas en **puestos de comida dulce y salada** para bodas, comuniones y otros eventos.
+Web de un negocio de catering para eventos con dos marcas: **Marlop's** (dulce) y **La Trasquilá** (salado). Los visitantes eligen una de las dos experiencias, consultan carta, galería y vídeos, y contactan por formulario o WhatsApp.
 
-## Descripción
+🔗 **[marlopsylatrasquila.com](https://marlopsylatrasquila.com/)**
 
-Este proyecto contiene el código fuente de la web oficial, donde los clientes pueden conocer nuestros servicios, explorar el menú y contactarnos directamente.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 
-### Servicios
-- **Marlops**: Puestos de comida dulce (cupcakes, tartas, helados, etc.).
-- **La Trasquila**: Puestos de comida salada (tacos, hamburguesas, paellas, etc.).
+> Proyecto para cliente real. **Rebranding en curso.**
 
-## Características
-- **Formulario de contacto**: Recopilamos nombre, correo y teléfono para responder a consultas.
-- **Enlaces a redes sociales**: Acceso directo a nuestras plataformas.
-- **Acceso a WhatsApp**: Comunicación rápida y directa.
-- **Política de privacidad**: Sin uso de cookies ni almacenamiento de datos.
+## Funcionalidades
 
-## Tecnologías
-- **HTML5** y **CSS3**: Estructura y estilos.
-- **JavaScript**: Interactividad.
-- **Font Awesome**: Iconos para mejorar la experiencia visual.
+- Portada que divide la web en las dos marcas, cada una con su propia página.
+- **Contenido desde JSON**: carta, galería, vídeos y experiencia se pintan con JavaScript a partir de ficheros en `src/json/`, así se actualizan sin tocar el HTML.
+- Formulario de contacto con validación en cliente y acceso directo a WhatsApp.
+- Componentes HTML reutilizables (cabecera, pie, info) incluidos dinámicamente.
+- Páginas legales: privacidad y términos de servicio.
 
+## Estructura
 
-## Creditos:
+```
+src/
+├── json/      → carta, galería, vídeos y experiencia de cada marca
+├── js/
+│   ├── renders/    → pintan menú, galería, experiencia y mensajes desde JSON
+│   ├── validator/  → validación del formulario de contacto
+│   └── main/       → lógica de cada página
+├── html/      → fragmentos reutilizables (footer, info, WhatsApp)
+└── sass/      → estilos
+```
 
-Este proyecto ha sido desarrollado por [Froddes](https://froddes.netlify.app/).
+## Desarrollo
 
-- **Icons**:
-	- Font Awesome (fontawesome.io)
+```bash
+npm install
+npm run dev      # servidor local
+npm run build    # build de producción en dist/
+```
 
-- ***Other***:
-	- jQuery (jquery.com)
-	- Scrollex (github.com/ajlkn/jquery.scrollex)
-	- Responsive Tools (github.com/ajlkn/responsive-tools)
+## Créditos
+
+Maquetación base adaptada de una plantilla de [HTML5 UP](https://html5up.net/) (licencia CCA 3.0, ver `LICENSE.txt`). Iconos de Font Awesome.
+
+---
+
+Desarrollado por **Francisco Javier Rodríguez Martín** ([@Froddes](https://github.com/Froddes)) · [froddes.com](https://froddes.com/)
